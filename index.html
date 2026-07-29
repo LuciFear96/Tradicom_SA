@@ -13,59 +13,112 @@
 </head>
 <body>
 
-  <!-- Barra de Navegación (Sticky y Responsiva) -->
-  <header>
-    <div class="container nav-container">
-      <!-- Logotipo y Nombre de la Empresa -->
-      <a href="index.html" class="logo" id="logoLink">
-        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M50 5L90 28.1V74.4L50 97.5L10 74.4V28.1L50 5Z" fill="url(#logo-gradient)" />
-          <path d="M30 45L40 45L43 37L70 37V55L65 55L63 60L57 60L55 55L45 55L43 60L37 60L35 55L30 55V45Z" fill="#fe0000" />
-          <circle cx="41" cy="60" r="4" fill="white" />
-          <circle cx="61" cy="60" r="4" fill="white" />
-          <path d="M58 40H67V47H58V40Z" fill="white" />
-          <path d="M48 40H55V47H48V40Z" fill="white" />
-          <defs>
-            <linearGradient id="logo-gradient" x1="10" y1="5" x2="90" y2="97.5" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#0046ff" />
-              <stop offset="100%" stop-color="#001140" />
-            </linearGradient>
-          </defs>
-        </svg>
-        <div class="logo-text">Tradicom<span>.</span></div>
-      </a>
+  <!-- Light Background Texture & Ambient Glow (from hero_fusion.html) -->
+  <div class="fusion-bg-texture"></div>
+  <div class="ambient-glow-blue"></div>
 
-      <!-- Enlaces de navegación entre las páginas del sitio -->
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html" class="active">Inicio</a></li>
-          <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-          <li class="nav-cta"><a href="contacto.html" id="navContactBtn">Contáctanos</a></li>
-        </ul>
-      </nav>
-
-      <!-- Botón de menú tipo hamburguesa para vista móvil -->
-      <button class="menu-toggle" aria-label="Abrir menú de navegación" id="menuToggleBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+  <!-- Frosted Scandinavian Navigation (Hero 3 Element) -->
+  <nav class="scandi-nav">
+    <div class="scandi-logo">
+      <a href="index.html"><img src="assets/tradicom_logo.svg" alt="Tradicom Distribuidora de Gasoil"></a>
     </div>
-  </header>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+    </ul>
+    <a href="contacto.html" class="btn-phone-capsule" id="navContactBtn">
+      <span>Contáctanos</span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú de navegación" id="menuToggleBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
 
-  <!-- Sección Hero (Inicio con Imagen de Fondo) -->
-  <section id="inicio" class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <div class="badge">
-          <span></span> ENERGÍA QUE MUEVE A VENEZUELA
+  <!-- Main Fusion Hero Stage -->
+  <section class="hero-fusion-section">
+    <div class="hero-fusion-grid">
+      <!-- Left Info -->
+      <div class="hero-left">
+        <h1 class="hero-headline">
+          Transportamos <span>Confianza,</span> entregamos <strong>energía</strong>
+        </h1>
+
+        <p class="hero-subheadline">
+          Especialistas en la distribución y transporte terrestre de gasoil, garantizando un suministro eficiente, seguro y continuo para mantener en movimiento al sector industrial, agrícola y flotas comerciales.
+        </p>
+
+        <!-- Value Pillars Checklist (Hero 2 & 3 Fusion) -->
+        <div class="pillars-list">
+          <div class="pillar-item">
+            <div class="pillar-check">✓</div>
+            <span>Cumplimiento normativo y permisos con el Ministerio para Hidrocarburos</span>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-check">✓</div>
+            <span>Máxima seguridad y protocolos de protección en cada despacho</span>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-check">✓</div>
+            <span>Flota especializada y personal capacitado de respuesta inmediata</span>
+          </div>
         </div>
-        <h1><span class="hero-sub-title">DISTRIBUIDORA</span> <span class="hero-main-title">TRADICOM S.A.</span></h1>
-        <p class="slogan"><span class="slogan-green">TRANSPORTAMOS</span> <span class="slogan-blue">CONFIANZA, ENTREGAMOS</span> <span class="slogan-green">ENERGÍA</span></p>
-        <p class="hero-description">En Tradicom S.A. llegamos a donde nuestros clientes nos necesiten, cumpliendo con los estándares para proteger tu carga, tu operación y tu tranquilidad</p>
-        <div class="hero-ctas">
-          <a href="contacto.html" class="btn btn-primary">Iniciar Cotización</a>
+
+        <div class="hero-actions">
+          <a href="contacto.html" class="btn-capsule-red">Trabaja con nosotros</a>
         </div>
+      </div>
+
+      <!-- Right Visual (Hero 2 & 3 Angled Frame + Quality Spec Object - NO FORM) -->
+      <div class="hero-right-visual">
+        <div class="angled-image-frame">
+          <img src="assets/flota.jpeg" alt="Flota de transporte de Tradicom S.A.">
+        </div>
+
+        <!-- Industrial Spec Object -->
+        <div class="industrial-spec-card">
+          <div class="spec-card-header">
+            <div class="spec-card-title">
+              <span class="live-dot"></span>
+              <span>Energía que mueve a Venezuela</span>
+            </div>
+          </div>
+
+          <div class="spec-grid">
+            <div class="spec-box">
+              <div class="spec-box-lbl">Eficiencia</div>
+              <div class="spec-box-val">100%</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-box-lbl">Vehículos</div>
+              <div class="spec-box-val">+15</div>
+            </div>
+            <div class="spec-box">
+              <div class="spec-box-lbl">Clientes</div>
+              <div class="spec-box-val">+20 Satisfechos</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Feature Pills Grid (Hero 3 Element) -->
+    <div class="scandi-pills-grid">
+      <div class="pill-card">
+        <div class="pill-num">01. COMPROMISO OPERATIVO</div>
+        <div class="pill-title">Puntualidad</div>
+        <div class="pill-desc">Transporte oportuno en todo momento, respetando estrictamente los tiempos de entrega programados.</div>
+      </div>
+      <div class="pill-card">
+        <div class="pill-num">02. PROTOCOLOS ESTRICTOS</div>
+        <div class="pill-title">Seguridad Garantizada</div>
+        <div class="pill-desc">Procedimientos certificados para el resguardo de la carga, la protección de las instalaciones y la tranquilidad del cliente.</div>
+      </div>
+      <div class="pill-card">
+        <div class="pill-num">03. SOLIDEZ INSTITUCIONAL</div>
+        <div class="pill-title">Respaldo y Confianza</div>
+        <div class="pill-desc">Más de 55 años de experiencia comprobada garantizando el suministro continuo de gasoil al sector industrial.</div>
       </div>
     </div>
   </section>
@@ -85,16 +138,17 @@
             <span class="exp-text-3">DE EXPERIENCIA</span>
           </div>
         </div>
-        <p>En <strong>Tradicom S.A.</strong>, nos dedicamos a integrar soluciones logísticas de vanguardia para conectar tu negocio con sus mercados meta. A lo largo de los años, hemos desarrollado una infraestructura sólida y una red integral de rutas terrestres que garantizan puntualidad, seguridad y un manejo excepcional de mercancías.</p>
-        <p>Nuestra misión principal es optimizar la cadena de suministro de cada uno de nuestros socios corporativos, ofreciendo flexibilidad operativa, tecnología satelital y un soporte disponible las 24 horas del día.</p>
+        <p>En la <strong>Distribuidora Tradicom S.A.</strong>, nos dedicamos a integrar soluciones logísticas de vanguardia especializadas en el transporte y abastecimiento seguro de gasoil. A lo largo de más de 55 años de trayectoria, hemos desarrollado una infraestructura operativa sólida y una flota cisterna capacitada para garantizar puntualidad, cumplimiento normativo y un suministro ininterrumpido a cada uno de nuestros clientes.</p>
+        <p>Nuestra misión principal es respaldar la continuidad energética de empresas e industrias, ofreciendo máxima seguridad operativa, resguardo de la carga y una atención personalizada caracterizada por la confianza y el compromiso constante.</p>
         <a href="sobre-nosotros.html" class="btn btn-primary" style="margin-top: 10px;">Ver Nuestra Historia</a>
       </div>
       
       <!-- Carrusel de imágenes automáticas (Controladas por JS) -->
       <div class="intro-carousel" id="homeCarousel">
-        <img src="assets/history.jpg" class="intro-carousel-img active" alt="Historia Tradicom">
-        <img src="assets/infrastructure.jpg" class="intro-carousel-img" alt="Infraestructura Tradicom">
-        <img src="assets/companies.jpg" class="intro-carousel-img" alt="Alianzas Comerciales">
+        <img src="assets/historia_1.png" class="intro-carousel-img active" alt="Historia Tradicom Caracas">
+        <img src="assets/historia_2.png" class="intro-carousel-img" alt="Operaciones Tradicom Anzoátegui">
+        <img src="assets/infra.jpeg" class="intro-carousel-img" alt="Infraestructura y Tanques Tradicom">
+        <img src="assets/flota.jpeg" class="intro-carousel-img" alt="Flota de Cisternas Tradicom">
       </div>
     </div>
   </section>
@@ -305,31 +359,11 @@
       <div class="footer-grid">
         <!-- Info de marca -->
         <div class="footer-brand">
-          <a href="index.html" class="logo" style="color: var(--primary-white);">
-            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 5L90 28.1V74.4L50 97.5L10 74.4V28.1L50 5Z" fill="url(#footer-logo-gradient)" />
-              <path d="M30 45L40 45L43 37L70 37V55L65 55L63 60L57 60L55 55L45 55L43 60L37 60L35 55L30 55V45Z" fill="#fe0000" />
-              <circle cx="41" cy="60" r="4" fill="white" />
-              <circle cx="61" cy="60" r="4" fill="white" />
-              <path d="M58 40H67V47H58V40Z" fill="white" />
-              <path d="M48 40H55V47H48V40Z" fill="white" />
-              <defs>
-                <linearGradient id="footer-logo-gradient" x1="10" y1="5" x2="90" y2="97.5" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#0046ff" />
-                  <stop offset="100%" stop-color="#001140" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <div class="logo-text">Tradicom<span>.</span></div>
-          </a>
-          <p>Proveedores de servicios logísticos y transporte de carga por carretera. Seguridad y confianza en cada ruta.</p>
+          <div class="scandi-logo" style="margin-bottom: 0;">
+            <a href="index.html"><img src="assets/tradicom_logo.svg" alt="Tradicom Distribuidora de Gasoil" style="height: 42px; width: auto; display: block;"></a>
+          </div>
+          <div class="footer-brand-divider"></div>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-            </a>
-            <a href="#" class="social-link" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
             <a href="#" class="social-link" aria-label="Instagram">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
@@ -340,9 +374,9 @@
         <div class="footer-contact">
           <h4>Contacto</h4>
           <ul class="footer-links" style="list-style: none; padding: 0;">
-            <li style="margin-bottom: 10px;">Email: <a href="mailto:contacto@tradicom.com">contacto@tradicom.com</a></li>
-            <li style="margin-bottom: 10px;">Teléfono: <a href="tel:+584120000000">+58 412-0000000</a></li>
-            <li style="margin-bottom: 10px;">Ubicación: Caracas, Venezuela</li>
+            <li style="margin-bottom: 10px;">Email: <a href="mailto:dtradicomsa@gmail.com">dtradicomsa@gmail.com</a></li>
+            <li style="margin-bottom: 10px;">Teléfono: <a href="tel:+584143809062">+58 414-3809062</a></li>
+            <li style="margin-bottom: 10px;">Dirección: Final Av. Juncal, Sector 29 De Marzo, Barcelona, Anzoategui</li>
           </ul>
         </div>
       </div>
@@ -350,10 +384,6 @@
       <!-- Derechos Reservados -->
       <div class="footer-bottom">
         <p>&copy; 2026 Tradicom S.A. Todos los derechos reservados.</p>
-        <div class="footer-bottom-links">
-          <a href="#">Política de Privacidad</a>
-          <a href="#">Política de Cookies</a>
-        </div>
       </div>
     </div>
   </footer>

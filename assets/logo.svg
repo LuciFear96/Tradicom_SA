@@ -5,23 +5,23 @@
       <!-- Línea Verde (Nace en la base de la letra C) -->
       <rect x="52" y="69" width="378" height="4" fill="#79ff7a" />
       <!-- Línea Roja (Nace en la base de la letra D) -->
-      <rect x="30" y="81" width="400" height="4" fill="#fe0000" />
+      <rect x="30" y="81" width="400" height="4" fill="#E22B2B" />
     </g>
 
     <!-- Monograma T-C-D Recreado con Separaciones Transparentes Claras -->
     <!-- skewX(-15) se aplica para mantener el estilo inclinado corporativo original -->
     <g transform="skewX(-15)">
       <!-- Letra 'T' (Azul) - Posicionada a la izquierda -->
-      <path d="M10 12H46V24H32V74H20V24H10V12Z" fill="#0046ff" />
+      <path d="M10 12H46V24H32V74H20V24H10V12Z" fill="#0A369D" />
       
       <!-- Letra 'C' (Verde) - Posicionada en el centro con una holgura clara para que sea legible -->
       <path d="M52 30H38C30 30 26 34 26 42V62C26 70 30 74 38 74H52V62H38C36 62 35 60 35 58V46C35 44 36 42 38 42H52V30Z" fill="#79ff7a" />
       
       <!-- Letra 'D' (Roja) - Posicionada a la derecha con holgura e interiores redondeados -->
-      <path d="M56 12H72C80 12 86 18 86 28V70C86 80 80 86 72 86H56V12ZM68 24V74H72C76 74 78 72 78 68V30C78 26 76 24 72 24H68Z" fill="#fe0000" />
+      <path d="M56 12H72C80 12 86 18 86 28V70C86 80 80 86 72 86H56V12ZM68 24V74H72C76 74 78 72 78 68V30C78 26 76 24 72 24H68Z" fill="#E22B2B" />
       
       <!-- Rectángulo azul de acento interno dentro del counter de la 'D' -->
-      <rect x="71" y="34" width="4" height="36" fill="#0046ff" />
+      <rect x="71" y="34" width="4" height="36" fill="#0A369D" />
     </g>
 
     <!-- Textos Principales del Logotipo (DISTRIBUIDORA TRADICOM, S.A.) -->
@@ -29,7 +29,7 @@
       <!-- "DISTRIBUIDORA" en Italic Black con stroke para grosor -->
       <text x="96" y="36" fill="#0f1c30" stroke="#0f1c30" stroke-width="1.2" stroke-linejoin="round" font-family="'Arial Black', Impact, sans-serif" font-weight="900" font-size="20" font-style="italic" letter-spacing="1">DISTRIBUIDORA</text>
       <!-- "TRADICOM, S.A." en Italic Black Rojo con stroke -->
-      <text x="80" y="68" fill="#fe0000" stroke="#fe0000" stroke-width="1.8" stroke-linejoin="round" font-family="'Arial Black', Impact, sans-serif" font-weight="900" font-size="27" font-style="italic" letter-spacing="0.5">TRADICOM, S.A.</text>
+      <text x="80" y="68" fill="#E22B2B" stroke="#E22B2B" stroke-width="1.8" stroke-linejoin="round" font-family="'Arial Black', Impact, sans-serif" font-weight="900" font-size="27" font-style="italic" letter-spacing="0.5">TRADICOM, S.A.</text>
     </g>
   </g>
 </svg>

@@ -8,21 +8,32 @@ document.addEventListener('DOMContentLoaded', () => {
   // ==========================================================================
   // 1. Barra de Navegación y Efecto Sticky al Desplazarse
   // ==========================================================================
-  const header = document.querySelector('header');
+  const header = document.querySelector('header') || document.querySelector('.scandi-nav');
   const menuToggle = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
   const navItems = document.querySelectorAll('.nav-links a');
 
   // Añade la clase 'scrolled' a la cabecera cuando el usuario baja la página
+  let scrollTicking = false;
   const controlDesplazamientoCabecera = () => {
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
+    if (header) {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
     }
   };
   
-  window.addEventListener('scroll', controlDesplazamientoCabecera);
+  window.addEventListener('scroll', () => {
+    if (!scrollTicking) {
+      window.requestAnimationFrame(() => {
+        controlDesplazamientoCabecera();
+        scrollTicking = false;
+      });
+      scrollTicking = true;
+    }
+  }, { passive: true });
   controlDesplazamientoCabecera(); // Comprobación inmediata al cargar la página
 
   // ==========================================================================
@@ -217,8 +228,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
       
-      // Número telefónico destino (Código de país + número, p. ej. 593 para Ecuador)
-      const telefonoDestino = '593999999999'; 
+      // Número telefónico destino corporativo (+58 414-3809062)
+      const telefonoDestino = '584143809062'; 
       const mensajeCodificado = encodeURIComponent(mensajeWhatsapp);
       const urlWhatsapp = `https://wa.me/${telefonoDestino}?text=${mensajeCodificado}`;
       
@@ -226,4 +237,18 @@ document.addEventListener('DOMContentLoaded', () => {
       window.open(urlWhatsapp, '_blank');
     });
   }
+
+  // ==========================================================================
+  // 6. Pestañas de Sector en Hero Fusion
+  // ==========================================================================
+  const sectorTabs = document.querySelectorAll('.sector-tab');
+  if (sectorTabs.length > 0) {
+    sectorTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        sectorTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    });
+  }
 });
+

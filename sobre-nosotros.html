@@ -13,51 +13,33 @@
 </head>
 <body>
 
-  <!-- Barra de Navegación (Sticky y Responsiva) -->
-  <header>
-    <div class="container nav-container">
-      <!-- Logotipo y Nombre de la Empresa -->
-      <a href="index.html" class="logo" id="logoLink">
-        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M50 5L90 28.1V74.4L50 97.5L10 74.4V28.1L50 5Z" fill="url(#logo-gradient)" />
-          <path d="M30 45L40 45L43 37L70 37V55L65 55L63 60L57 60L55 55L45 55L43 60L37 60L35 55L30 55V45Z" fill="#ff6b00" />
-          <circle cx="41" cy="60" r="4" fill="white" />
-          <circle cx="61" cy="60" r="4" fill="white" />
-          <path d="M58 40H67V47H58V40Z" fill="white" />
-          <path d="M48 40H55V47H48V40Z" fill="white" />
-          <defs>
-            <linearGradient id="logo-gradient" x1="10" y1="5" x2="90" y2="97.5" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#2563eb" />
-              <stop offset="100%" stop-color="#0b1a30" />
-            </linearGradient>
-          </defs>
-        </svg>
-        <div class="logo-text">Tradicom<span>.</span></div>
-      </a>
 
-      <!-- Enlaces de navegación con 'Sobre Nosotros' activo -->
-      <nav>
-        <ul class="nav-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="sobre-nosotros.html" class="active">Sobre Nosotros</a></li>
-          <li class="nav-cta"><a href="contacto.html" id="navContactBtn">Contáctanos</a></li>
-        </ul>
-      </nav>
 
-      <!-- Botón de menú tipo hamburguesa para vista móvil -->
-      <button class="menu-toggle" aria-label="Abrir menú de navegación" id="menuToggleBtn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+  <!-- Frosted Scandinavian Navigation (Hero 3 Element) -->
+  <nav class="scandi-nav">
+    <div class="scandi-logo">
+      <a href="index.html"><img src="assets/tradicom_logo.svg" alt="Tradicom Distribuidora de Gasoil"></a>
     </div>
-  </header>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre-nosotros.html" class="active">Sobre Nosotros</a></li>
+    </ul>
+    <a href="contacto.html" class="btn-phone-capsule" id="navContactBtn">
+      <span>Contáctanos</span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú de navegación" id="menuToggleBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
 
   <!-- Banner Superior de Presentación de la Página -->
   <section class="page-banner">
     <div class="container">
       <h1>Sobre <span>Nosotros</span></h1>
-      <p>Conoce la trayectoria, la capacidad técnica y los valores fundamentales de la empresa líder en soluciones logísticas nacionales.</p>
+      <p>Conoce la historia, trayectoria, operacion y los valores fundamentales de nuestra empresa</p>
     </div>
   </section>
 
@@ -65,76 +47,97 @@
   <section id="detalles-nosotros">
     <div class="container">
       <div class="section-header">
-        <span class="tag">Trayectoria y Recursos</span>
-        <h2>Nuestra <span>Operación</span></h2>
-        <p>Tres pilares que describen quiénes somos, cómo operamos y con quiénes trabajamos día a día.</p>
+        <span class="tag">INICIO Y COMPROMISO</span>
+        <h2>Trayectoria y <span>Operacion</span></h2>
       </div>
 
       <!-- Componente Slider/Carrusel Interactivo -->
       <div class="slider-container">
         <div class="slider-wrapper">
           
-          <!-- Diapositiva 1: Historia -->
+          <!-- Diapositiva 1: Nuestra Historia (Inicios en Caracas) -->
           <div class="slide active">
             <div class="slide-image">
-              <img src="assets/history.jpg" alt="Equipo Tradicom planificando logística">
+              <img src="assets/historia_1.png" alt="Orígenes de Tradicom S.A. en Caracas">
             </div>
             <div class="slide-content">
               <span class="slide-tag">Nuestra Historia</span>
-              <h3>Décadas de evolución e innovación en transporte</h3>
-              <p>Nacimos con la visión de transformar el transporte terrestre de mercancías. A lo largo de los años, nos hemos consolidado como un aliado estratégico fundamental, adaptándonos a las nuevas tecnologías y optimizando los procesos para ofrecer un servicio transparente, rápido y de absoluta confianza para nuestros clientes.</p>
+              <h3>Orígenes en Caracas y "El Conguito"</h3>
+              <p>Fundada hace más de 55 años en Caracas, Tradicom S.A. inició sus operaciones con un único camión bautizado como <strong>"El Conguito"</strong>. Distribuimos gasoil, keroseno y gasolina por el territorio central, construyendo los valores de responsabilidad y puntualidad que nos caracterizan.</p>
               <div class="slide-stats">
                 <div class="stat-item">
-                  <div class="stat-number">+15 Años</div>
-                  <div class="stat-label">Liderando el Sector</div>
+                  <div class="stat-number">+55 Años</div>
+                  <div class="stat-label">Trayectoria Ininterrumpida</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">+50k TN</div>
-                  <div class="stat-label">Carga Anual Transportada</div>
+                  <div class="stat-number">1er Camión</div>
+                  <div class="stat-label">"El Conguito"</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Diapositiva 2: Infraestructura -->
+          <!-- Diapositiva 2: Nuestra Historia (Evolución en Anzoátegui) -->
           <div class="slide">
             <div class="slide-image">
-              <img src="assets/infrastructure.jpg" alt="Almacén logístico de Tradicom">
+              <img src="assets/historia_2.png" alt="Operación especializada en gasoil en Anzoátegui">
+            </div>
+            <div class="slide-content">
+              <span class="slide-tag">Nuestra Historia</span>
+              <h3>Especialistas Líderes en Diésel</h3>
+              <p>Trasladamos nuestra sede principal al estado Anzoátegui para responder a las exigencias energéticas e industriales del país. Consolidamos nuestra infraestructura especializándonos exclusivamente en el transporte y suministro de diésel para industrias, flotas y sector agrícola.</p>
+              <div class="slide-stats">
+                <div class="stat-item">
+                  <div class="stat-number">Anzoátegui</div>
+                  <div class="stat-label">Sede Operativa Principal</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number">100% Diésel</div>
+                  <div class="stat-label">Especialización Industrial</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Diapositiva 3: Infraestructura -->
+          <div class="slide">
+            <div class="slide-image">
+              <img src="assets/infra.jpeg" alt="Flota de cisternas, tanques de almacenamiento y personal de Tradicom S.A.">
             </div>
             <div class="slide-content">
               <span class="slide-tag">Infraestructura</span>
-              <h3>Capacidad operativa y flota de última generación</h3>
-              <p>Contamos con una de las flotas más modernas y diversificadas del sector, equipada con tecnología de geolocalización satelital (GPS). Nuestros centros de distribución estratégicos y almacenes automatizados garantizan el correcto almacenamiento y manejo de cualquier tipo de mercancía, resguardando la cadena de frío y de seguridad.</p>
+              <h3>Flota, Tanques y Equipo Técnico</h3>
+              <p>Contamos con una moderna flota cisterna para transporte pesado, tanques industriales de almacenamiento estratégico y sistemas de bombeo de precisión. Un equipo humano administrativo y operativo altamente capacitado garantiza una logística segura, eficiente y fluida.</p>
               <div class="slide-stats">
                 <div class="stat-item">
-                  <div class="stat-number">+200</div>
-                  <div class="stat-label">Unidades de Transporte</div>
+                  <div class="stat-number">Flota & Tanques</div>
+                  <div class="stat-label">Equipamiento de Alta Capacidad</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">10k m²</div>
-                  <div class="stat-label">Área de Distribución</div>
+                  <div class="stat-number">Equipo Experto</div>
+                  <div class="stat-label">Personal Operativo y Administrativo</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Diapositiva 3: Alianzas comerciales -->
+          <!-- Diapositiva 4: Nuestros Clientes -->
           <div class="slide">
             <div class="slide-image">
-              <img src="assets/companies.jpg" alt="Transporte mercante y alianzas corporativas">
+              <img src="assets/clientes.jpg" alt="Compromiso y satisfacción de clientes de Tradicom S.A.">
             </div>
             <div class="slide-content">
-              <span class="slide-tag">Alianzas Comerciales</span>
-              <h3>Respaldados por las empresas líderes del mercado</h3>
-              <p>Trabajamos en conjunto con corporaciones nacionales y multinacionales líderes de diversas industrias (alimentos, retail, manufactura e industrial). Nuestras alianzas estratégicas nos permiten expandir la cobertura de rutas y garantizar que tu producto llegue a cualquier destino con la máxima agilidad y competitividad de costo.</p>
+              <span class="slide-tag">Nuestros Clientes</span>
+              <h3>Compromiso y Confianza de Nuestros Clientes</h3>
+              <p>Atendemos a una amplia red de clientes industriales y corporativos con un compromiso total. Mantenemos un 100% de eficiencia operativa en el suministro energético, asegurando la continuidad de sus procesos con el más alto grado de satisfacción.</p>
               <div class="slide-stats">
                 <div class="stat-item">
-                  <div class="stat-number">+120</div>
-                  <div class="stat-label">Clientes Corporativos</div>
+                  <div class="stat-number">100% Eficiencia</div>
+                  <div class="stat-label">Continuidad Energética Garantizada</div>
                 </div>
                 <div class="stat-item">
-                  <div class="stat-number">99.8%</div>
-                  <div class="stat-label">Índice de Satisfacción</div>
+                  <div class="stat-number">+120 Clientes</div>
+                  <div class="stat-label">Empresas e Industrias Atendidas</div>
                 </div>
               </div>
             </div>
@@ -176,19 +179,19 @@
             </svg>
           </div>
           <h3>Nuestra Misión</h3>
-          <p>Ofrecer servicios logísticos y de transporte terrestre de mercancías con los más altos estándares de calidad, puntualidad y seguridad. Buscamos optimizar la cadena de valor de nuestros clientes, convirtiéndonos en su socio de confianza mediante soluciones tecnológicas y un equipo humano altamente capacitado.</p>
+          <p>Transportar y distribuir diésel con máxima seguridad, responsabilidad y estricto cumplimiento normativo, garantizando la continuidad operativa ininterrumpida de nuestros clientes a través de una logística de combustible confiable y el respaldo de más de 55 años de experiencia comprobada.</p>
           <div class="filosofia-pillars">
             <div class="pillar-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              Excelencia operativa
+              Cero paradas no programadas con entregas justo a tiempo
             </div>
             <div class="pillar-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              Enfoque centrado en el cliente
+              Flotilla de cisternas certificada para manejo seguro de hidrocarburos
             </div>
             <div class="pillar-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              Seguridad en toda la cadena
+              Solidez institucional avalada por medio siglo en el mercado
             </div>
           </div>
           <!-- Watermark decorativo SVG -->
@@ -208,19 +211,19 @@
             </svg>
           </div>
           <h3>Nuestra Visión</h3>
-          <p>Consolidarnos para el año 2030 como la empresa líder en soluciones logísticas integrales en la región, reconocida por nuestra innovación tecnológica, sostenibilidad ambiental al optimizar rutas para reducir emisiones, y por brindar una respuesta rápida y adaptable ante los retos del mercado global.</p>
+          <p>Consolidarnos como el aliado estratégico líder en el transporte y suministro especializado de diésel, impulsando el crecimiento de nuestros clientes mediante la innovación logística, la responsabilidad ambiental y estándares superiores de excelencia operativa.</p>
           <div class="filosofia-pillars">
             <div class="pillar-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              Liderazgo tecnológico y tracking
+              Trazabilidad inteligente y monitoreo de precisión en ruta
             </div>
             <div class="pillar-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              Logística verde y sustentable
+              Cadena de despacho a la medida para sectores de alta demanda
             </div>
             <div class="pillar-item">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-              Expansión y cobertura nacional
+              Huella operativa sostenible mediante rutas optimizadas
             </div>
           </div>
           <!-- Watermark decorativo SVG -->
@@ -246,29 +249,29 @@
         <!-- Objetivo 1 -->
         <div class="objetivo-card">
           <div class="objetivo-number">01</div>
-          <h3>Puntualidad Absoluta</h3>
-          <p>Cumplir con el 99.5% de los tiempos de entrega programados a través de planes de contingencia en ruta y planeación analítica avanzada.</p>
+          <h3>Compromiso Legal y Normativo</h3>
+          <p>Operamos conforme a las regulaciones y permisos oficiales establecidos por el Ministerio del Poder Popular para Hidrocarburos. Cumplir la normativa no es un requisito opcional, es nuestra responsabilidad institucional.</p>
         </div>
 
         <!-- Objetivo 2 -->
         <div class="objetivo-card">
           <div class="objetivo-number">02</div>
-          <h3>Seguridad Integral</h3>
-          <p>Mantener una tasa de siniestralidad de cero mediante capacitación constante a conductores, escolta inteligente y monitoreo 24/7 de la carga.</p>
+          <h3>Seguridad Integral en Ruta</h3>
+          <p>Implementamos rigurosos estándares de seguridad industrial y protocolos de protección para resguardar la carga de diésel del cliente, su continuidad operativa y su absoluta tranquilidad en cada despacho.</p>
         </div>
 
         <!-- Objetivo 3 -->
         <div class="objetivo-card">
           <div class="objetivo-number">03</div>
-          <h3>Innovación en Tracking</h3>
-          <p>Integrar sistemas IoT avanzados en toda nuestra flota, permitiendo a nuestros clientes visibilidad de temperatura e ubicación exacta en tiempo real.</p>
+          <h3>Puntualidad y Eficiencia</h3>
+          <p>Transportamos y distribuimos a tiempo en todo momento, cumpliendo estrictamente con los compromisos de entrega asumidos para resguardar la cadena energética de cada industria y empresa atendida.</p>
         </div>
 
         <!-- Objetivo 4 -->
         <div class="objetivo-card">
           <div class="objetivo-number">04</div>
-          <h3>Eficiencia de Costos</h3>
-          <p>Reducir costos operativos de transporte para nuestros socios comerciales optimizando rutas dinámicas y disminuyendo retornos vacíos.</p>
+          <h3>Satisfacción del Cliente</h3>
+          <p>Contamos con un equipo humano y técnico altamente dedicado para brindar un servicio superior, enfocado en respuestas ágiles, atención personalizada y máxima confiabilidad en todo el proceso.</p>
         </div>
       </div>
     </div>
@@ -280,31 +283,11 @@
       <div class="footer-grid">
         <!-- Info de marca -->
         <div class="footer-brand">
-          <a href="index.html" class="logo" style="color: var(--primary-white);">
-            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M50 5L90 28.1V74.4L50 97.5L10 74.4V28.1L50 5Z" fill="url(#footer-logo-gradient)" />
-              <path d="M30 45L40 45L43 37L70 37V55L65 55L63 60L57 60L55 55L45 55L43 60L37 60L35 55L30 55V45Z" fill="#ff6b00" />
-              <circle cx="41" cy="60" r="4" fill="white" />
-              <circle cx="61" cy="60" r="4" fill="white" />
-              <path d="M58 40H67V47H58V40Z" fill="white" />
-              <path d="M48 40H55V47H48V40Z" fill="white" />
-              <defs>
-                <linearGradient id="footer-logo-gradient" x1="10" y1="5" x2="90" y2="97.5" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#2563eb" />
-                  <stop offset="100%" stop-color="#0b1a30" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <div class="logo-text">Tradicom<span>.</span></div>
-          </a>
-          <p>Proveedores de servicios logísticos y transporte de carga por carretera. Seguridad y confianza en cada ruta.</p>
+          <div class="scandi-logo" style="margin-bottom: 0;">
+            <a href="index.html"><img src="assets/tradicom_logo.svg" alt="Tradicom Distribuidora de Gasoil" style="height: 42px; width: auto; display: block;"></a>
+          </div>
+          <div class="footer-brand-divider"></div>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-            </a>
-            <a href="#" class="social-link" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
             <a href="#" class="social-link" aria-label="Instagram">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
@@ -315,9 +298,9 @@
         <div class="footer-contact">
           <h4>Contacto</h4>
           <ul class="footer-links" style="list-style: none; padding: 0;">
-            <li style="margin-bottom: 10px;">Email: <a href="mailto:contacto@tradicom.com">contacto@tradicom.com</a></li>
-            <li style="margin-bottom: 10px;">Teléfono: <a href="tel:+584120000000">+58 412-0000000</a></li>
-            <li style="margin-bottom: 10px;">Ubicación: Caracas, Venezuela</li>
+            <li style="margin-bottom: 10px;">Email: <a href="mailto:dtradicomsa@gmail.com">dtradicomsa@gmail.com</a></li>
+            <li style="margin-bottom: 10px;">Teléfono: <a href="tel:+584143809062">+58 414-3809062</a></li>
+            <li style="margin-bottom: 10px;">Dirección: Final Av. Juncal, Sector 29 De Marzo, Barcelona, Anzoategui</li>
           </ul>
         </div>
       </div>
@@ -325,10 +308,6 @@
       <!-- Derechos Reservados -->
       <div class="footer-bottom">
         <p>&copy; 2026 Tradicom S.A. Todos los derechos reservados.</p>
-        <div class="footer-bottom-links">
-          <a href="#">Política de Privacidad</a>
-          <a href="#">Política de Cookies</a>
-        </div>
       </div>
     </div>
   </footer>
