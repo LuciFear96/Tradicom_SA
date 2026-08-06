@@ -2025,15 +2025,31 @@ footer {
 }
 
 .scandi-nav .nav-links a {
+  position: relative;
   text-decoration: none;
   color: var(--color-text-dark);
   font-weight: 700;
   font-size: 0.92rem;
-  transition: color 0.2s ease;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+  display: inline-block;
 }
 
 .scandi-nav .nav-links a::after {
-  display: none;
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--color-red);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.scandi-nav .nav-links a:hover::after,
+.scandi-nav .nav-links a.active::after {
+  width: 100%;
 }
 
 .scandi-nav .nav-links a:hover,
@@ -2422,6 +2438,8 @@ body {
     color: #0f172a !important;
     font-size: 1.1rem !important;
     font-weight: 700 !important;
+    width: fit-content !important;
+    padding: 4px 0 !important;
   }
   .scandi-nav .nav-links.active a:hover,
   .scandi-nav .nav-links.active a.active {
