@@ -2287,7 +2287,7 @@ footer {
 /* Industrial Spec Card */
 .industrial-spec-card {
   position: absolute;
-  bottom: -25px;
+  bottom: -55px;
   left: 20px;
   right: 20px;
   background: rgba(255, 255, 255, 0.95);
