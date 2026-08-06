@@ -1579,6 +1579,7 @@ footer {
 
 /* Cinta de Logos Infinita (Ticker) */
 .ticker-wrap {
+  display: none !important; /* Temporarily hidden as requested by user */
   width: 100%;
   background-color: var(--bg-light);
   border-top: 1px solid var(--border-color);
