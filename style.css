@@ -302,7 +302,19 @@ header.scrolled .nav-links a.active {
   height: 3px;
   background-color: #0f172a !important; /* Dark color */
   border-radius: 2px;
-  transition: all 0.3s ease;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 /* Hero Section */
@@ -2417,9 +2429,6 @@ body {
     margin-right: 12px !important;
   }
   .scandi-nav .nav-links {
-    display: none !important;
-  }
-  .scandi-nav .nav-links.active {
     display: flex !important;
     flex-direction: column !important;
     position: fixed !important;
@@ -2428,13 +2437,28 @@ body {
     width: 280px !important;
     max-width: 80vw !important;
     height: 100vh !important;
+    height: 100dvh !important;
     background: #ffffff !important;
-    padding: 80px 24px 40px 24px !important;
-    box-shadow: -10px 0 30px rgba(0,0,0,0.15) !important;
+    padding: 90px 28px 40px 28px !important;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15) !important;
     z-index: 1000 !important;
-    gap: 20px !important;
+    gap: 24px !important;
+    margin: 0 !important;
+    transform: translateX(100%) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease, visibility 0.35s ease !important;
   }
-  .scandi-nav .nav-links.active a {
+
+  .scandi-nav .nav-links.active {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  .scandi-nav .nav-links a {
     color: #0f172a !important;
     font-size: 1.1rem !important;
     font-weight: 700 !important;

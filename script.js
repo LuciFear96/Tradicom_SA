@@ -40,7 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Menú Hamburguesa para Dispositivos Móviles
   // ==========================================================================
   if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
       menuToggle.classList.toggle('active');
       navLinks.classList.toggle('active');
     });
@@ -51,6 +52,14 @@ document.addEventListener('DOMContentLoaded', () => {
         menuToggle.classList.remove('active');
         navLinks.classList.remove('active');
       });
+    });
+
+    // Cierra el menú al hacer clic en cualquier parte fuera del menú
+    document.addEventListener('click', (e) => {
+      if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+      }
     });
   }
 
