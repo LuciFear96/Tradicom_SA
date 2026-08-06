@@ -942,23 +942,28 @@ header.scrolled .nav-links a.active {
 .beneficio-card:nth-child(4) { border-top: 4px solid var(--brand-orange); }
 
 .beneficio-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: var(--radius-sm);
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 24px;
+  transition: transform 0.3s ease;
 }
 
-.beneficio-card:nth-child(1) .beneficio-icon { background-color: var(--brand-orange); color: var(--primary-white); }
-.beneficio-card:nth-child(2) .beneficio-icon { background-color: var(--brand-blue); color: var(--primary-white); }
-.beneficio-card:nth-child(3) .beneficio-icon { background-color: var(--brand-green); color: var(--primary-white); }
-.beneficio-card:nth-child(4) .beneficio-icon { background-color: var(--brand-orange); color: var(--primary-white); }
+.beneficio-card:nth-child(1) .beneficio-icon { background-color: rgba(226, 43, 43, 0.08); color: var(--color-red); }
+.beneficio-card:nth-child(2) .beneficio-icon { background-color: rgba(10, 54, 157, 0.08); color: var(--color-blue); }
+.beneficio-card:nth-child(3) .beneficio-icon { background-color: rgba(21, 139, 73, 0.15); color: var(--color-green); }
+.beneficio-card:nth-child(4) .beneficio-icon { background-color: rgba(226, 43, 43, 0.08); color: var(--color-red); }
+
+.beneficio-card:hover .beneficio-icon {
+  transform: scale(1.05);
+}
 
 .beneficio-icon svg {
-  width: 28px;
-  height: 28px;
+  width: 36px;
+  height: 36px;
 }
 
 .beneficio-card h3 {
