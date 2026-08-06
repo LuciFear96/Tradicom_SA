@@ -1227,12 +1227,12 @@ footer {
 }
 
 .footer-slogan {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--color-blue);
-  margin-top: 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 10px;
   margin-bottom: 8px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.2px;
 }
 
 .footer-brand-divider {
