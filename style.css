@@ -2436,9 +2436,6 @@ body {
     margin-right: 12px !important;
   }
   .scandi-nav .nav-links {
-    display: none !important;
-  }
-  .scandi-nav .nav-links.active {
     display: flex !important;
     flex-direction: column !important;
     position: fixed !important;
@@ -2454,9 +2451,21 @@ body {
     z-index: 1000 !important;
     gap: 24px !important;
     margin: 0 !important;
-    animation: drawerSlideIn 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+    transform: translateX(100%) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease, visibility 0.35s ease !important;
   }
-  .scandi-nav .nav-links.active a {
+
+  .scandi-nav .nav-links.active {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+
+  .scandi-nav .nav-links a {
     color: #0f172a !important;
     font-size: 1.1rem !important;
     font-weight: 700 !important;
