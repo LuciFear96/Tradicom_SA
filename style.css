@@ -2437,6 +2437,17 @@ body {
     margin-bottom: 36px !important;
     width: 100% !important;
   }
+  .industrial-spec-card {
+    position: relative !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    margin-top: 16px !important;
+    padding: 16px 20px !important;
+    box-sizing: border-box !important;
+    border-radius: 14px !important;
+  }
   .scandi-nav {
     padding: 12px 4% !important;
     width: 100% !important;
