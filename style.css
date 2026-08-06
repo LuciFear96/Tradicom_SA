@@ -2019,8 +2019,9 @@ footer {
   display: flex;
   gap: 32px;
   list-style: none;
-  margin: 0;
+  margin: 0 0 0 auto;
   padding: 0;
+  align-items: center;
 }
 
 .scandi-nav .nav-links a {
@@ -2041,6 +2042,7 @@ footer {
 }
 
 .btn-phone-capsule {
+  margin-left: 24px;
   background: rgba(226, 43, 43, 0.08);
   border: 2px solid var(--color-red);
   color: var(--color-red);
@@ -2390,6 +2392,13 @@ body {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  .btn-phone-capsule {
+    margin-left: auto !important;
+    margin-right: 12px !important;
   }
   .scandi-nav .nav-links {
     display: none !important;

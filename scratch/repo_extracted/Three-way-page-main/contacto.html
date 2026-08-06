@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tradicom S.A. | Contáctanos - Cotizaciones y Atención al Cliente</title>
+  <!-- Etiquetas Meta para SEO -->
+  <meta name="description" content="Ponte en contacto con Tradicom S.A. Solicita cotizaciones para tu transporte terrestre y proyectos logísticos. Contáctanos también por WhatsApp.">
+  <meta name="keywords" content="Tradicom, Contacto, Cotización, Teléfono, Correo, Almacén, Logística, Dirección, WhatsApp">
+  <meta name="author" content="Tradicom S.A.">
+  <!-- Enlace a la hoja de estilos compartida -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+  <!-- Frosted Scandinavian Navigation (Hero 3 Element) -->
+  <nav class="scandi-nav">
+    <div class="scandi-logo">
+      <a href="index.html"><img src="assets/tradicom_logo.svg" alt="Tradicom Distribuidora de Gasoil"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+    </ul>
+    <a href="contacto.html" class="btn-phone-capsule active" id="navContactBtn">
+      <span>Contáctanos</span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menú de navegación" id="menuToggleBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+
+  <!-- Banner Superior de Presentación de la Página -->
+  <section class="page-banner">
+    <div class="container">
+      <h1>Contácta<span>nos</span></h1>
+      <p>Estamos listos para atender tus requerimientos de carga, almacenamiento y distribución. Escríbenos y cotiza hoy.</p>
+    </div>
+  </section>
+
+  <!-- Sección de Formulario de Contacto y Datos de Oficina (Grid de 2 Columnas) -->
+  <section id="contacto">
+    <div class="container">
+      <div class="contacto-grid">
+        
+        <!-- Columna Izquierda: Información Física y Virtual de la Empresa -->
+        <div class="contacto-info">
+          <h3>Información de Contacto</h3>
+          <p class="info-subtitle">Ponte en contacto directo con nosotros a través de las diferentes vías y responderemos a la brevedad.</p>
+          
+          <ul class="info-list">
+            <!-- Teléfonos -->
+            <li class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="info-text">
+                <h4>Teléfono de Contacto</h4>
+                <p><a href="tel:+584143809062">+58 414-3809062</a></p>
+              </div>
+            </li>
+
+            <!-- Correos electrónicos -->
+            <li class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="info-text">
+                <h4>Correo Electrónico</h4>
+                <p><a href="mailto:dtradicomsa@gmail.com">dtradicomsa@gmail.com</a></p>
+              </div>
+            </li>
+
+            <!-- Dirección Física -->
+            <li class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="info-text">
+                <h4>Dirección Principal</h4>
+                <p>Final Av. Juncal, Sector 29 De Marzo, Barcelona, Anzoategui</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Columna Derecha: Formulario Web y WhatsApp Corporativo -->
+        <div class="contacto-form-container">
+          <h3>Solicita tu Requerimiento</h3>
+          <form class="contacto-form" id="contactForm">
+            <!-- Nombre y Teléfono -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nombre Completo *</label>
+                <input type="text" id="name" class="form-control" placeholder="Escribe tu nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Número de Contacto *</label>
+                <input type="tel" id="phone" class="form-control" placeholder="+58 123-4567890" required>
+              </div>
+            </div>
+
+            <!-- Correo y Nombre de Empresa -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Correo Electrónico *</label>
+                <input type="email" id="email" class="form-control" placeholder="correo@empresa.com" required>
+              </div>
+              <div class="form-group">
+                <label for="company">Nombre de la Empresa <span class="optional">(Opcional)</span></label>
+                <input type="text" id="company" class="form-control" placeholder="Nombre de tu empresa">
+              </div>
+            </div>
+
+            <!-- Caja de Texto Mensaje -->
+            <div class="form-group">
+              <label for="message">Mensaje *</label>
+              <textarea id="message" class="form-control" placeholder="Cuéntanos los detalles de su solicitud" required></textarea>
+            </div>
+
+            <!-- Botón de Envío del Formulario -->
+            <button type="submit" class="btn btn-primary" style="width: 100%; border: none; font-size: 1.1rem; padding: 18px;">Enviar Mensaje</button>
+            
+            <!-- Separador "O" -->
+            <div class="separator-or">O</div>
+
+            <!-- Botón del API de WhatsApp -->
+            <a href="https://wa.me/584143809062" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="whatsappBtn">
+              <!-- WhatsApp SVG Oficial -->
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.982L2 22l5.233-1.371a9.92 9.92 0 0 0 4.775 1.217h.004c5.505 0 9.989-4.478 9.99-9.984C22.007 6.478 17.521 2 12.012 2zm5.789 14.121c-.244.69-1.217 1.35-1.674 1.444-.457.096-.98.172-2.909-.592-2.467-.978-4.048-3.486-4.17-3.65-.123-.164-1.002-1.332-1.002-2.54 0-1.208.629-1.802.853-2.047.224-.246.488-.307.65-.307.163 0 .325.001.467.008.148.007.348-.056.544.42.196.475.672 1.638.73 1.76.059.12.098.262.019.42-.079.158-.12.257-.238.396-.118.14-.249.312-.354.418-.117.117-.239.245-.103.479.136.233.605 1.001 1.296 1.618.89.794 1.642 1.04 1.874 1.149.233.109.369.092.507-.067.137-.159.59-.687.748-.921.157-.234.315-.198.531-.118.217.08.1.373 1.37.943.118.058.197.089.256.187.06.1.06.574-.184 1.264z"/>
+              </svg>
+              Contáctanos por WhatsApp
+            </a>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Compartido -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Info de marca -->
+        <div class="footer-brand">
+          <div class="scandi-logo" style="margin-bottom: 0;">
+            <a href="index.html"><img src="assets/tradicom_logo.svg" alt="Tradicom Distribuidora de Gasoil" style="height: 42px; width: auto; display: block;"></a>
+          </div>
+          <div class="footer-brand-divider"></div>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contacto -->
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <ul class="footer-links" style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 10px;">Email: <a href="mailto:dtradicomsa@gmail.com">dtradicomsa@gmail.com</a></li>
+            <li style="margin-bottom: 10px;">Teléfono: <a href="tel:+584143809062">+58 414-3809062</a></li>
+            <li style="margin-bottom: 10px;">Dirección: Final Av. Juncal, Sector 29 De Marzo, Barcelona, Anzoategui</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Derechos Reservados -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Tradicom S.A. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
