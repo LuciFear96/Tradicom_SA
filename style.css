@@ -2436,6 +2436,10 @@ body {
     margin-right: 12px !important;
   }
   .scandi-nav .nav-links {
+    display: none !important;
+  }
+
+  .scandi-nav .nav-links.active {
     display: flex !important;
     flex-direction: column !important;
     position: fixed !important;
@@ -2451,18 +2455,12 @@ body {
     z-index: 1000 !important;
     gap: 24px !important;
     margin: 0 !important;
-    transform: translateX(100%) !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease, visibility 0.35s ease !important;
+    animation: drawerSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
   }
 
-  .scandi-nav .nav-links.active {
-    transform: translateX(0) !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    pointer-events: auto !important;
+  .scandi-nav .nav-links.is-closing {
+    display: flex !important;
+    animation: drawerSlideOut 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
   }
 
   .scandi-nav .nav-links a {
@@ -2500,6 +2498,17 @@ body {
   to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+@keyframes drawerSlideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
   }
 }
 

@@ -40,25 +40,43 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Menú Hamburguesa para Dispositivos Móviles
   // ==========================================================================
   if (menuToggle && navLinks) {
+    function closeMenuSmoothly() {
+      if (navLinks.classList.contains('active') && !navLinks.classList.contains('is-closing')) {
+        menuToggle.classList.remove('active');
+        navLinks.classList.add('is-closing');
+        setTimeout(() => {
+          navLinks.classList.remove('active');
+          navLinks.classList.remove('is-closing');
+        }, 300);
+      }
+    }
+
+    function toggleMenuSmoothly() {
+      if (navLinks.classList.contains('active')) {
+        closeMenuSmoothly();
+      } else {
+        menuToggle.classList.add('active');
+        navLinks.classList.remove('is-closing');
+        navLinks.classList.add('active');
+      }
+    }
+
     menuToggle.addEventListener('click', (e) => {
       e.stopPropagation();
-      menuToggle.classList.toggle('active');
-      navLinks.classList.toggle('active');
+      toggleMenuSmoothly();
     });
 
     // Cierra el menú cuando se hace clic en cualquier enlace
     navItems.forEach(item => {
       item.addEventListener('click', () => {
-        menuToggle.classList.remove('active');
-        navLinks.classList.remove('active');
+        closeMenuSmoothly();
       });
     });
 
     // Cierra el menú al hacer clic en cualquier parte fuera del menú
     document.addEventListener('click', (e) => {
       if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-        menuToggle.classList.remove('active');
-        navLinks.classList.remove('active');
+        closeMenuSmoothly();
       }
     });
   }
