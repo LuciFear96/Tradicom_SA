@@ -36,7 +36,7 @@
 
 
   <!-- Banner Superior de Presentación de la Página -->
-  <section class="page-banner">
+  <section class="page-banner reveal-on-scroll">
     <div class="container">
       <h1>Sobre <span>Nosotros</span></h1>
       <p>Conoce la historia, trayectoria, operacion y los valores fundamentales de nuestra empresa</p>
@@ -46,13 +46,13 @@
   <!-- Sección de Trayectoria, Infraestructura y Alianzas (Slider) -->
   <section id="detalles-nosotros">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal-on-scroll">
         <span class="tag">INICIO Y COMPROMISO</span>
         <h2>Trayectoria y <span>Operacion</span></h2>
       </div>
 
       <!-- Componente Slider/Carrusel Interactivo -->
-      <div class="slider-container">
+      <div class="slider-container reveal-on-scroll">
         <div class="slider-wrapper">
           
           <!-- Diapositiva 1: Nuestra Historia (Inicios en Caracas) -->
@@ -145,32 +145,39 @@
 
         </div>
 
-        <!-- Botones de Control de Navegación del Slider -->
-        <button class="slider-control slider-control-prev" aria-label="Anterior" id="slidePrevBtn">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </button>
-        <button class="slider-control slider-control-next" aria-label="Siguiente" id="slideNextBtn">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </button>
+        <!-- Controles de Navegación del Slider -->
+        <div class="slider-controls">
+          <button class="slider-btn prev-btn" id="prevSlide" aria-label="Diapositiva Anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
 
-        <!-- Indicadores de Puntos del Slider -->
-        <div class="slider-dots"></div>
+          <!-- Indicadores de Puntos -->
+          <div class="slider-dots" id="sliderDots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+          </div>
+
+          <button class="slider-btn next-btn" id="nextSlide" aria-label="Siguiente Diapositiva">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Sección: Filosofía Organizacional (Misión y Visión) -->
-  <section id="filosofia" class="section-bg-alt">
+  <section id="filosofia" class="section-bg-alt" style="position: relative;">
     <div class="container">
-      <div class="section-header">
-        <span class="tag">Nuestros Valores</span>
-        <h2>Filosofía <span>Organizacional</span></h2>
-        <p>Guiamos cada decisión de negocio y cada ruta de transporte bajo principios éticos y operativos sólidos.</p>
+      <div class="section-header reveal-on-scroll">
+        <span class="tag">FILOSOFÍA CORPORATIVA</span>
+        <h2>Misión y <span>Visión</span></h2>
       </div>
 
       <div class="filosofia-grid">
         <!-- Misión -->
-        <div class="filosofia-card mision">
+        <div class="filosofia-card mision reveal-left">
           <div class="filosofia-icon-container">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
@@ -203,7 +210,7 @@
         </div>
 
         <!-- Visión -->
-        <div class="filosofia-card vision">
+        <div class="filosofia-card vision reveal-right">
           <div class="filosofia-icon-container">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
@@ -239,7 +246,7 @@
   <!-- Sección: Objetivos Estratégicos -->
   <section id="objetivos" style="background-color: var(--bg-dark); color: var(--text-light);">
     <div class="container">
-      <div class="section-header">
+      <div class="section-header reveal-on-scroll">
         <span class="tag" style="background-color: rgba(255,107,0,0.15);">Nuestras Metas</span>
         <h2 style="color: var(--primary-white);">Objetivos <span>Estratégicos</span></h2>
         <p style="color: rgba(255,255,255,0.6);">Los pilares que guían nuestro crecimiento y aseguran el éxito a largo plazo de nuestros servicios.</p>
@@ -247,28 +254,28 @@
 
       <div class="objetivos-grid">
         <!-- Objetivo 1 -->
-        <div class="objetivo-card">
+        <div class="objetivo-card reveal-on-scroll reveal-delay-1">
           <div class="objetivo-number">01</div>
           <h3>Compromiso Legal y Normativo</h3>
           <p>Operamos conforme a las regulaciones y permisos oficiales establecidos por el Ministerio del Poder Popular para Hidrocarburos. Cumplir la normativa no es un requisito opcional, es nuestra responsabilidad institucional.</p>
         </div>
 
         <!-- Objetivo 2 -->
-        <div class="objetivo-card">
+        <div class="objetivo-card reveal-on-scroll reveal-delay-2">
           <div class="objetivo-number">02</div>
           <h3>Seguridad Integral en Ruta</h3>
           <p>Implementamos rigurosos estándares de seguridad industrial y protocolos de protección para resguardar la carga de diésel del cliente, su continuidad operativa y su absoluta tranquilidad en cada despacho.</p>
         </div>
 
         <!-- Objetivo 3 -->
-        <div class="objetivo-card">
+        <div class="objetivo-card reveal-on-scroll reveal-delay-3">
           <div class="objetivo-number">03</div>
           <h3>Puntualidad y Eficiencia</h3>
           <p>Transportamos y distribuimos a tiempo en todo momento, cumpliendo estrictamente con los compromisos de entrega asumidos para resguardar la cadena energética de cada industria y empresa atendida.</p>
         </div>
 
         <!-- Objetivo 4 -->
-        <div class="objetivo-card">
+        <div class="objetivo-card reveal-on-scroll reveal-delay-4">
           <div class="objetivo-number">04</div>
           <h3>Satisfacción del Cliente</h3>
           <p>Contamos con un equipo humano y técnico altamente dedicado para brindar un servicio superior, enfocado en respuestas ágiles, atención personalizada y máxima confiabilidad en todo el proceso.</p>

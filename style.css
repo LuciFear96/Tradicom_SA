@@ -1922,6 +1922,53 @@ footer {
 }
 
 /* ==========================================================================
+   SCROLL REVEAL DISCOVERY ANIMATIONS ("Efecto de Descubrimiento Suave")
+   ========================================================================== */
+.reveal-on-scroll,
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  will-change: opacity, transform;
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll {
+  transform: translateY(35px);
+}
+
+.reveal-left {
+  transform: translateX(-40px);
+}
+
+.reveal-right {
+  transform: translateX(40px);
+}
+
+.reveal-on-scroll.is-visible,
+.reveal-left.is-visible,
+.reveal-right.is-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Delay escalonado para grillas y elementos correlativos */
+.reveal-delay-1 { transition-delay: 0.12s; }
+.reveal-delay-2 { transition-delay: 0.24s; }
+.reveal-delay-3 { transition-delay: 0.36s; }
+.reveal-delay-4 { transition-delay: 0.48s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll,
+  .reveal-left,
+  .reveal-right {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* ==========================================================================
    Hero Fusion & Frosted Scandinavian Nav Styles (from hero_fusion.html)
    ========================================================================== */
 

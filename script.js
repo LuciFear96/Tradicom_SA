@@ -277,5 +277,29 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // ==========================================================================
+  // 7. Scroll Reveal Animation ("Efecto de Descubrimiento Suave")
+  // ==========================================================================
+  const revealElements = document.querySelectorAll('.reveal-on-scroll, .reveal-left, .reveal-right');
+
+  if ('IntersectionObserver' in window && revealElements.length > 0) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  } else {
+    revealElements.forEach(el => el.classList.add('is-visible'));
+  }
 });
 
